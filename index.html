@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的 GitHub 练习</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>你好，GitHub！</h1>
+
+    <p>这是我创建的第一个 GitHub 项目。</p>
+
+    <p id="count">点击次数：0</p>
+
+    <button onclick="addCount()">点我</button>
+
+    <script>
+        let count = 0;
+
+        function addCount() {
+            count++;
+
+            document.getElementById("count").innerText =
+                "点击次数：" + count;
+        }
+    </script>
+
+</body>
+</html>
